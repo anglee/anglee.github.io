@@ -1,0 +1,14 @@
+<html>
+<body>
+<a href="javascript:window.location=window.location.toString().replace(/console.appnexus.com/g, '01-thorondor-ui-om-qa.envnxs.net')">PROD→OM-QA</a>
+
+
+
+<a href="javascript:window.location=window.location.toString().replace(/01-thorondor-ui-om-qa.envnxs.net/g, ‘console.appnexus.com’)">OM-QA→PROD</a>
+
+
+<a href='javascript:window.location=window.location.toString().replace("http","https").replace(/localhost:\d+/,"console.appnexus.com").replace("?referrer","&referrer").replace(/line-item\/advertiser\/(\w+)\/insertion-order\/(\w+)\/line-item\/(\w+)\/edit/,`buyside/line-item:$3/edit?advertiser_id=$1&insertion_order_id=$2`).replace(/line-item\/advertiser\/(\w+)\/insertion-order\/(\w+)\/line-item\/create/,`buyside/line-item/new?advertiser_id=$1&insertion_order_id=$2`).replace(/line-item\/advertiser\/(\w+)\/line-item\/(\w+)\/edit/,`buyside/line-item:$2/edit?advertiser_id=$1`).replace(/line-item\/advertiser\/(\w+)\/line-item\/create/,`buyside/line-item/new?advertiser_id=$1`)'>LIER → BS</a>
+
+<a href='javascript:window.location=window.location.toString().replace(”https","http").replace("console.appnexus.com","localhost:3000").replace("&referrer","?referrer").replace(/buyside\/line-item:(\w+)\/edit\?advertiser_id=(\w+)&insertion_order_id=(\w+)/,`line-item/advertiser/$2/insertion-order/$3/line-item/$1/edit`).replace(/buyside\/line-item:(\w+)\/edit\?advertiser_id=(\w+)/,`line-item/advertiser/$2/line-item/$1/edit`).replace(/buyside\/line-item\/new\?advertiser_id=(\w+)/,`line-item/advertiser/$1/line-item/create`)'>BS → LIER</a>
+</body>
+</html>
